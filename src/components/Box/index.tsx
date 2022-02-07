@@ -18,7 +18,7 @@ function Box({ title, description, icon, value, set }: BoxProps) {
         <h3 className="BoxTitle" >{title}</h3>
         {icon}
       </div>
-      <input className="input" type="text" placeholder={description} value={value} onChange={(event)=> set(event.target.value)} />
+      <input className="input" type="text" placeholder={description} value={value} onChange={({target})=> set(target.value)} />
     </div>
   )
 
